@@ -1,8 +1,12 @@
+/* nav-bar styling */
+
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 15px;
     overflow: hidden;
+    position: fixed;
+    top: 0;
 }
 
 li {
@@ -13,4 +17,39 @@ li a {
     display: block;
     padding: 8px;
     background-color: white;
+}
+
+/* logo styling */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* Space between vertical and horizontal bars */
+}
+
+.vertical-bars, .horizontal-bars {
+    display: flex;
+    gap: 2px; /* Space between individual bars */
+}
+
+.vertical-bars {
+    flex-direction: row;
+}
+
+.horizontal-bars {
+    flex-direction: column;
+}
+
+.bar {
+    background-color: black;
+}
+
+.vertical-bar {
+    width: 4px;
+    height: 22px;
+}
+
+.horizontal-bar {
+    width: 25px;
+    height: 4px;
 }
