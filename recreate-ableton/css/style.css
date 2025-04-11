@@ -1,22 +1,40 @@
 /* nav-bar styling */
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 15px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;  
+    font-weight: 400;
+    font-style: normal;
 }
 
-li {
-    float: left;
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+  
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
 }
 
 li a {
     display: block;
     padding: 8px;
-    background-color: white;
+    background-color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
